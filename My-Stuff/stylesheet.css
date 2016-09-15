@@ -1,0 +1,321 @@
+div {
+  display: inline-block;
+}
+
+.box {
+  border: 20px solid;
+  width: 200px;
+  height: 200px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s, 0s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.boxbox {
+  margin: 30;
+  border: 20px solid;
+  width: 100px;
+  height: 100px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s, 0s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.boxboxbox6 {
+  margin: 15;
+  border: 10px solid;
+  width: 50px;
+  height: 50px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s, 0s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.boxboxbox5 {
+  margin: 15;
+  border: 10px solid;
+  width: 50px;
+  height: 50px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s, 0s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.boxboxbox4 {
+  margin: 15;
+  border: 10px solid;
+  width: 50px;
+  height: 50px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s, 0s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.boxboxbox3 {
+  margin: 15;
+  border: 10px solid;
+  width: 50px;
+  height: 50px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s, 0s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.boxboxbox2 {
+  margin: 15;
+  border: 10px solid;
+  width: 50px;
+  height: 50px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s, 0s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.boxboxbox {
+  margin: 15;
+  border: 10px solid;
+  width: 50px;
+  height: 50px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s, 0s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.boxbox6 {
+  margin: 30;
+  border: 20px solid;
+  width: 50px;
+  height: 50px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s, 0s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.boxbox5 {
+  margin: 30;
+  border: 20px solid;
+  width: 50px;
+  height: 50px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s, 0s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.boxbox4 {
+  margin: 30;
+  border: 20px solid;
+  width: 100px;
+  height: 100px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s, 0s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.boxbox3 {
+  margin: 30;
+  border: 20px solid;
+  width: 100px;
+  height: 100px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s, 0s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.boxbox2 {
+  margin: 30;
+  border: 20px solid;
+  width: 100px;
+  height: 100px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s, 0s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.box2 {
+  border: 20px solid;
+  width: 200px;
+  height: 200px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s, 0s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.box3 {
+  border: 20px solid;
+  width: 200px;
+  height: 200px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s, 0s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.box4 {
+  border: 20px solid;
+  width: 200px;
+  height: 200px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s, 0s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.box5 {
+  border: 20px solid;
+  width: 200px;
+  height: 200px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s, 0s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.box6 {
+  border: 20px solid ;
+  width: 200px;
+  height: 200px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s, 0s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.box:hover {
+  background: red;
+  border-radius:50%;
+}
+
+.boxbox:hover {
+  background: red;
+  border-radius:50%;
+}
+
+.boxbox2:hover {
+  background: red;
+  border-radius:50%;
+}
+
+.boxbox3:hover {
+  background: red;
+  border-radius:50%;
+}
+
+.boxbox4:hover {
+  background: red;
+  border-radius:50%;
+}
+
+.boxbox5:hover {
+  background: red;
+  border-radius:50%;
+}
+
+.boxbox6:hover {
+  background: red;
+  border-radius:50%;
+}
+
+.box2:hover {
+  background: grey;
+  border-radius:50%;
+}
+
+.box3:hover {
+  background: blue;
+  border-radius:50%;
+}
+
+.box4:hover {
+  background: red;
+  border-radius:50%;
+}
+
+.box5:hover {
+  background: grey;
+  border-radius:50%;
+}
+
+.box6:hover {
+  background: blue;
+  border-radius:50%;
+}
+
+.boxboxbox:hover {
+  background: red;
+  border-radius:50%;
+}
+
+.boxboxbox2:hover {
+  background: red;
+  border-radius:50%;
+}
+
+.boxboxbox3:hover {
+  background: red;
+  border-radius:50%;
+}
+
+.boxboxbox4:hover {
+  background: red;
+  border-radius:50%;
+}
+
+.boxboxbox5:hover {
+  background: red;
+  border-radius:50%;
+}
+
+.boxboxbox6:hover {
+  background: red;
+  border-radius:50%;
+}
