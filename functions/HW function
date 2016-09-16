@@ -1,0 +1,9 @@
+<script>
+  var balance = 100;
+  function bank(withdraw, deposit) {
+    var editBalance = -withdraw + deposit;
+    var total = balance + editBalance;
+    alert("You have " + total);
+  }
+  bank(0,1000);
+</script>
