@@ -1,0 +1,93 @@
+/*For change2*/
+div {
+    height: 125px;
+    width: 175px;
+    font-size: 30px;
+    text-align: middle;
+    position: relative;
+    position: inline-block;
+}
+#hundredA {
+    height: 50px;
+    width: 130px;
+    position: absolute;
+    border: 1px dashed black;
+    background-color: #216C2A;
+    text-align: center;
+}
+#fiftyA {
+    height: 50px;
+    width: 130px;
+    position: absolute;
+    border: 1px dashed black;
+    background-color: #216C2A;
+    text-align: center;
+}
+#twentyA {
+    height: 50px;
+    width: 130px;
+    position: absolute;
+    border: 1px dashed black;
+    background-color: #216C2A;
+    text-align: center;
+}
+#tenA {
+    height: 50px;
+    width: 130px;
+    position: absolute;
+    border: 1px dashed black;
+    background-color: #216C2A;
+    text-align: center;
+}
+#fiveA {
+    height: 50px;
+    width: 130px;
+    position: absolute;
+    border: 1px dashed black;
+    background-color: #216C2A;
+    text-align: center;
+}
+#oneA {
+    height: 50px;
+    width: 130px;
+    position: absolute;
+    border: 1px dashed black;
+    background-color: #216C2A;
+    text-align: center;
+}
+#quarterA {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px dashed black;
+    background-color: grey;
+    text-align: center;
+}
+#dimeA {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px dashed black;
+    background-color: grey;
+    text-align: center;
+}
+#nickelA {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border: 1px dashed black;
+    background-color: grey;
+    text-align: center;
+    border-radius: 50%;
+}
+#pennyA {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px dashed black;
+    background-color: grey;
+    text-align: center;
+}
