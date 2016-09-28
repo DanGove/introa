@@ -1,0 +1,76 @@
+<link rel="stylesheet" type="text/css" href="style2A.css">
+<div id="hundred"></div>
+<div id="fifty"></div>
+<div id="twenty"></div>
+<div id="ten"></div>
+<div id="five"></div>
+<div id="one"></div>
+<div id="quarter"></div>
+<div id="dime"></div>
+<div id="nickel"></div>
+<div id="penny"></div>
+<script>
+    var changeA;
+    var change = function(need,payed) {
+        if(need - payed < 0) {
+            document.write("You change is $" + Math.round((Math.abs(need - payed) * 100) / 100) + "!");
+            changeA = Math.abs(need - payed);
+        } else if(need - payed === 0) {
+            document.write("You payed the exact amount!");
+        } else {
+            document.write("You didn't pay enough! You still need $" + Math.round((Math.abs(need - payed) * 100) / 100) + "!");
+        }
+    }
+    var changeA = Math.round((changeA) * 100) / 100;
+    change(prompt("What is the cost?"),prompt("What did you pay?"));
+    var changeH = changeA % 100;
+    var changeB = changeA - changeH;
+    var changeH100 = changeB / 100;
+    changeA = changeA - changeB;
+    document.getElementById('hundred').innerHTML = changeH100 + "X : <div id=" + "hundredA" + ">$100</div>";
+    var changeF = changeA % 50;
+    changeB = changeA - changeF;
+    var changeF50 = changeB / 50;
+    changeA = changeA - changeB
+    document.getElementById('fifty').innerHTML = changeF50 + "X : <div id=" + "fiftyA" + ">$50</div>";
+    var changeT = changeA % 20;
+    changeB = changeA - changeT;
+    var changeT20 = changeB / 20;
+    changeA = changeA - changeB;
+    document.getElementById('twenty').innerHTML = changeT20 + "X : <div id=" + "twentyA" + ">$20</div>";
+    var changeTA = changeA % 10;
+    changeB = changeA - changeTA;
+    var changeT10 = changeB / 10;
+    changeA = changeA - changeB;
+    document.getElementById('ten').innerHTML = changeT10 + "X : <div id=" + "tenA" + ">$10</div>";
+    var changeFA = changeA % 5;
+    changeB = changeA - changeFA;
+    var changeF5 = changeB / 5
+    changeA = changeA - changeB;
+    document.getElementById('five').innerHTML = changeF5 + "X : <div id=" + "fiveA" + ">$5</div>";
+    var changeO = changeA % 1;
+    changeB = changeA - changeO;
+    var changeO1 = changeB / 1;
+    changeA = changeA - changeB;
+    document.getElementById('one').innerHTML = changeO1 + "X : <div id=" + "oneA" + ">$1</div>";   
+    var changeQ = changeA % .25;
+    changeB = changeA - changeQ;
+    var changeQ25 = changeB / .25;
+    changeA = changeA - changeB;
+    document.getElementById('quarter').innerHTML = changeQ25 + "X : <div id=" + "quarterA" + ">25c</div>";
+    var changeD = changeA % .1;
+    changeB = changeA - changeD;
+    var changeD1 = changeB / .1;
+    changeA = changeA - changeB;
+    document.getElementById('dime').innerHTML = changeD1 + "X : <div id=" + "dimeA" + ">10c</div>";
+    var changeN = changeA % .05;
+    changeB = changeA - changeN;
+    var changeN5 = changeB / .05;
+    changeA = changeA - changeB;
+    document.getElementById('nickel').innerHTML = changeN5 + "X : <div id=" + "nickelA" + ">5c</div>";
+    var changeP = changeA % .01;
+    changeB = changeA - changeP;
+    var changeP1 = changeB / .01;
+    changeA = changeA - changeB;
+    document.getElementById('penny').innerHTML = changeP1 + "X : <div id=" + "pennyA" + ">1c</div>";
+</script>
