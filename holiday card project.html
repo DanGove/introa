@@ -1,0 +1,220 @@
+<div id="base">
+  <div id="title"><div id="titleBox"><p>Merry Christmas!</p><p>From, Daniel</p></div></div>
+  <div id="image">
+    <img id="img1" class="image" src="IMG_0255.JPG">
+    <img id="img2" class="image" src="IMG_0244.JPG">
+    <img id="img3" class="image" src="IMG_0243.JPG">
+    <img id="img4" class="image" src="IMG_0230.JPG">
+    <img id="img5" class="image" src="IMG_0234.JPG">
+    <img id="img6" class="image" src="IMG_0232.JPG">
+    <img id="img7" class="image" src="IMG_0247.JPG">
+    <img id="img8" class="image" src="IMG_0248.JPG">
+    <img id="img9" class="image" src="IMG_0249.JPG">
+    <img id="img10" class="image" src="IMG_0257.JPG">
+    <img id="img11" class="image" src="IMG_0265.JPG">
+    <img id="img12" class="image" src="IMG_0274.JPG">
+    <img id="img13" class="image" src="IMG_0354.JPG">
+    <img id="img14" class="image" src="IMG_0424.JPG">
+    <img id="img15" class="image" src="http://www.hotel-r.net/im/hotel/gb/fifteen-18.png">
+    <img id="img16" class="image" src="http://www.charbase.com/images/glyph/9327">
+    <img id="img17" class="image" src="http://www.charbase.com/images/glyph/9328">
+    <img id="img18" class="image" src="http://www.drodd.com/images15/18-13.png">
+    <img id="img19" class="image" src="http://www.hotelroomsearch.net/im/hotels/gb/nineteen-12.png">
+    <img id="img20" class="image" src="http://media.tumblr.com/tumblr_mbzw44RQTA1rx0w0w.gif">
+  </div>
+  <button id="back" onclick="back()"><b>Go Back</b></button>
+  <div id="goTo"><b>Go To:</b> <input id="pageNum" type="number" name="toPage" onchange="goToPage()"></div>
+  <button id="next" onclick="next()"><b>Go Next</b></button>
+  <div id="chart_div"></div>
+</div>
+<style>
+  #title {
+    font-size: 25px;
+    color: #731509;
+    width: 100%;
+    text-align: center;
+    line-height: 5px;
+    height: 15%;
+    z-index: 1;
+    border-bottom: 3px solid #468263;
+  }
+  #img10 {
+    -webkit-transform: rotate(90deg);
+  }
+  #img6 {
+    -webkit-transform: rotate(90deg);
+  }
+  #img5 {
+    -webkit-transform: rotate(90deg);
+  }
+  #img4 {
+    -webkit-transform: rotate(90deg);
+  }
+  input[type=number]::-webkit-outer-spin-button,
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    -moz-appearance:textfield;
+  }
+  #chart_div {
+    bottom: -50px;
+    left: 24%;
+    width: 55%;
+    position: relative;
+    height: 250px;
+    border: 2px solid black;
+  }
+  #titleBox {
+    position: relative;
+    margin: 3 auto;
+    border: 3px solid #468263;
+    height: 85%;
+    width: 96%;
+    border-radius: 15%;
+    font-family: 'Shrikhand', cursive;
+
+  }
+  #goTo {
+    position: absolute;
+    left: 27%;
+    bottom: 5%;
+    width: 300px;
+    color: #731509;
+  }
+  #pageNum {
+    width: 25px;
+    padding-left: 5px;
+    background-color: #fafbf7;
+  }
+  #img1 {
+    display: block;
+  }
+  #image {
+    height: 45%;
+    background-color: #fafbf7;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 3px solid #468263;
+    z-index: -1;
+  }
+  #base {
+    background-color: #C0C0B0;
+    height: 150%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    width: 60%;
+    border: 3px solid #468263;
+    z-index: 1;
+  }
+  #back {
+    float: left;
+    color: #731509;
+    height: 8%;
+    background-color: #C19469;
+    width: 75px;
+    border-radius: 20%;
+  }
+  #next {
+    float: right;
+    height: 8%;
+    width: 75px;
+    background-color: #C19469;
+    color: #731509;
+    border-radius: 20%;
+  }
+  .image {
+    max-height: 47.5%;
+    max-width: 50%;
+    display: none;
+    bottom: 115px;
+    position: absolute;
+  }
+</style>
+<script>
+  var imgNum = 20;
+  var curImgNum = 1;
+  document.getElementById("pageNum").value = curImgNum;
+  function back() {
+    curImgNum--;
+    if(curImgNum === 0) {
+      curImgNum = imgNum;
+    }
+    setImg();
+  }
+  function next() {
+    curImgNum++;
+    if(curImgNum === imgNum + 1) {
+      curImgNum = 1;
+    }
+    setImg();
+  }
+  function setImg() {
+    for(var i = 0; i < imgNum; i++) {
+      document.getElementsByClassName("image")[i].style.display = "none";
+    }
+    document.getElementById("img" + curImgNum).style.display = "block";
+    document.getElementById("pageNum").value = curImgNum;
+  }
+  function goToPage() {
+    if(document.getElementById("pageNum").value > 20) {
+      curImgNum = 20;
+      setImg();
+    } else  if(document.getElementById("pageNum").value < 0) {
+      curImgNum = 1;
+      setImg();
+    } else {
+      curImgNum = document.getElementById("pageNum").value;
+      setImg();
+    }
+  }
+</script>
+<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+var hapDan = 0, hapBen = 0, hapMom = 0, hapDad = 0, hapJam = 0;
+  // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'people');
+        data.addColumn('number', 'Happiness');
+        data.addRows([
+          ['Daniel', hapDan],
+          ['James', hapJam],
+          ['Mom', hapMom],
+          ['Dad', hapDad],
+          ['Ben', hapBen]
+        ]);
+        console.log(hapDan);
+        // Set chart options
+        var options = {'title':'Christmas Cheer',
+                       'width':400,
+                       'height':300,
+                       'backgroundColor':'none',
+                       'colors':['red','green','white','blue']};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+      window.setInterval(hap(),100);
+      function hap() {
+        hapDan += Math.random();
+        hapBen += Math.random();
+        hapJam += Math.random();
+        hapDad += Math.random();
+        hapMom += Math.random();
+        drawChart();
+      }
+</script>
